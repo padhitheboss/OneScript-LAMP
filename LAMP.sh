@@ -1,10 +1,9 @@
-
 #!/bin/bash
 
 if [[ $EUID -ne 0 ]]; then
     echo "You must be root"
     exit 1
-
+fi
 function mainmenu(){
     clear
     echo " "
